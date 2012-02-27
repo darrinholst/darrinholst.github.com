@@ -114,6 +114,14 @@ module OctopressLiquidFilters
     input
   end
 
+  # Removes trailing .html
+  def strip_html(input)
+    if input =~ /(.+)\.html$/
+      input = $1
+    end
+    input
+  end
+
   # Returns a url without the protocol (http://)
   def shorthand_url(input)
     input.gsub /(https?:\/\/)(\S+)/ do
