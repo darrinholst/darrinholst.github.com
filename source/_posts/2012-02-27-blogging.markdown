@@ -1,0 +1,20 @@
+---
+layout: post
+title: "blogging"
+date: 2012-02-27 22:18
+comments: true
+categories: 
+---
+Blogging is a weird thing when you're not internet famous. Why do you write stuff when ones of tens of people will probably see it? For me it's the act of writing that helps with thoughts. I write here, I write on [twitter](http://twitter.com/darrinholst), I write in a [journal](http://dayoneapp.com/).
+
+The benefits of writing is not what this is about. It's about more important stuff like what tool do you use to write?
+
+I've been using [tumblr](http://tumblr.com) since around 2009 when I switched off of a wordpress install that ran on some vps that I had somewhere. Somewhere is the key because that stuff is gone now. My fault, but still all of it is gone.
+
+Tumblr is a really easy tool to use and it has a ton of themes, but one thing that I found difficult is syntax highlighting of code. There are embedded gists (which you have to go through hoops to get working on tumblr) and there is [prettify](http://code.google.com/p/google-code-prettify/) (more hoops). I ended up writing a [syntax highlighting app](http://syntaxtical.heroku.com) that gives you html with inline styles. It did the job, but not as easy as it could be.
+
+Recently I started playing around with [jekyll](https://github.com/mojombo/jekyll). It's really nice to have all your posts stored in markdown in a git repository, but you're pretty much on your own for design. I suck at design.
+
+Then I found [octopress](http://octopress.org) which combines the best of both worlds. It uses jekyll, but comes with a nice looking theme and plenty of plugins. It's really easy to host your site on github pages or even a heroku app. The thing I like best about it is it's syntax highlighting capabilities. It uses the same "triple tick" code fencing that you're used to with github flavored markdown.
+
+If you're deploying to github pages I'm not sure you can host the source files and the generated files in the same repo. I tried doing it with different branches, but couldn't get it to work. So I have 2 repos, but the one with the source files is the only one I update. <code>rake deploy</code> takes care of updating the other one with the static content.
