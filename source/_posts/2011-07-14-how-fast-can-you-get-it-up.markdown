@@ -3,7 +3,7 @@ layout: post
 title: "How fast can you get it up?"
 date: 2011-07-14
 comments: true
-permalink: "/post/7636301742/how-fast-can-you-get-it-up.html"
+permalink: "/post/7636301742.html"
 ---
 
 So with OS X Lion just around the corner I’ve been thinking about the steps to get my computer up and running from a fresh install. You do do a fresh install, right? I’ll be testing these steps out in the next couple of weeks, but here’s what I have in my head…

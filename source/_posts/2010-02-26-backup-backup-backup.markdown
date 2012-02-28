@@ -3,7 +3,7 @@ layout: post
 title: "backup backup backup"
 date: 2010-02-26
 comments: true
-permalink: "/post/413204323/backup-backup-backup.html"
+permalink: "/post/413204323.html"
 ---
 
 I’ve gone through many variations of my backup strategy since I started storing things digitally. Here is my current setup…

@@ -3,7 +3,7 @@ layout: post
 title: "My obligatory post on webOS"
 date: 2011-02-11
 comments: true
-permalink: "/post/3235082450/my-obligatory-post-on-webos.html"
+permalink: "/post/3235082450.html"
 ---
 
 So it seems the cool thing to do in the webOS dev community is to write a blog post about their view on the webOS announcement this week…so here’s mine.

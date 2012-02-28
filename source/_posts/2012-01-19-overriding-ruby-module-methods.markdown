@@ -3,7 +3,7 @@ layout: post
 title: "Overriding ruby module methods"
 date: 2012-01-19
 comments: true
-permalink: "/post/16116450958/overriding-ruby-module-methods.html"
+permalink: "/post/16116450958.html"
 ---
 
 I learned something new about Module.include the other day. Consider the following:

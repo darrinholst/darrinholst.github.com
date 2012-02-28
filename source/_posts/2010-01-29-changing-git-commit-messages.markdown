@@ -3,7 +3,7 @@ layout: post
 title: "changing git commit messages"
 date: 2010-01-29
 comments: true
-permalink: "/post/359817782/changing-git-commit-messages.html"
+permalink: "/post/359817782.html"
 ---
 
 Changing your last commit message in a git repository is fairly trivial
