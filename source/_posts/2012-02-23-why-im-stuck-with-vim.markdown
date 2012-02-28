@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I’m stuck with Vim"
-date: 2012-02-23 12:00
+date: 2012-02-23
 comments: true
 permalink: "/post/18231389984/why-im-stuck-with-vim.html"
 ---

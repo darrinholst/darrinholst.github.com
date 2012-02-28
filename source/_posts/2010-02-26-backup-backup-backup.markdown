@@ -5,6 +5,7 @@ date: 2010-02-26
 comments: true
 permalink: "/post/413204323/backup-backup-backup.html"
 ---
+
 I’ve gone through many variations of my backup strategy since I started storing things digitally. Here is my current setup…
 
 * The master copy is stored on my iMac’s local disk.

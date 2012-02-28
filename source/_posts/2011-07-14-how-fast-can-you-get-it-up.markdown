@@ -48,3 +48,4 @@ and these are the apps that I’ll install as I need them
 * [VMWare Fusion](http://www.vmware.com/products/fusion/overview.html)
 
 That’s at least a good 3 days of standup updates, I’ll update with anything else I find.
+

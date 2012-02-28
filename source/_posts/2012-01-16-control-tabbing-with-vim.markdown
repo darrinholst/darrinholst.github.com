@@ -26,10 +26,8 @@ At first I wasn’t any happier with this solution than I was with bufexplorer�
 
 Continuing to activate it will cycle through the list. So now with Control-Tab bound to this I can quickly Control-Tab and then Enter for the buffer I want.
 
-```
-let g:LustyJugglerAltTabMode = 1
-noremap <silent> <C-Tab> :LustyJuggler<CR>
-```
+    let g:LustyJugglerAltTabMode = 1
+    noremap <silent> <C-Tab> :LustyJuggler<CR>
 
 This is almost the behavior that I want. The only thing I don’t like about it is that extra Enter when selecting a buffer instead of selecting it when you release. I’m not sure if you can do that in Vim, but it shouldn’t take too long to build up the muscle memory to do it.
 

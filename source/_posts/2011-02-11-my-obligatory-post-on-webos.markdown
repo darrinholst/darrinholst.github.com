@@ -27,3 +27,4 @@ One of the major draws to webOS that Palm pushed was it’s just like web develo
 ## Future Developement
 
 The way it is looking now, I will no longer be doing any webOS development. I will fix bugs in my current apps as they appear and if they completely break then I will pull them from the market. I love javascript development, but I have too many other things up in the air right now to focus on.
+

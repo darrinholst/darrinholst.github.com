@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tailing remote logs with capistrano"
-date: 2012-02-24 12:00
+date: 2012-02-24
 comments: true
 permalink: "/post/18231749247/tail-remote-logs-with-capistrano.html"
 ---
@@ -19,3 +19,4 @@ end
 ```
 
 Then it's just <code>cap tail</code>
+
