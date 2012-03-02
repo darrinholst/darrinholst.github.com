@@ -16,7 +16,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /rss
+subscribe_rss: http://feeds.feedburner.com/darrinholst
 subscribe_email:
 email:
 
