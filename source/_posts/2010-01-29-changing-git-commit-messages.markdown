@@ -23,9 +23,9 @@ Then start the interactive rebase
 
 Which will open up your editor with…
 
-pick b6a0a9f we want to change this message
-pick 6119426 third commit
-
+    pick b6a0a9f we want to change this message
+    pick 6119426 third commit
+    
     # Rebase e24b57d..6119426 onto e24b57d
     #
     # Commands:
