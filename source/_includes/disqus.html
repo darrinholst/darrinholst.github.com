@@ -5,8 +5,8 @@
       {% if page.comments == true %}
         {% comment %} `page.comments` can be only be set to true on pages/posts, so we embed the comments here. {% endcomment %}
         // var disqus_developer = 1;
-        var disqus_identifier = '{{ site.url }}{{ page.url | strip_html_extension }}';
-        var disqus_url = '{{ site.url }}{{ page.url | strip_html_extension }}';
+        var disqus_identifier = 'http://darrinholst.com{{ page.url | strip_html_extension }}';
+        var disqus_url = 'http://darrinholst.com{{ page.url | strip_html_extension }}';
         var disqus_script = 'embed.js';
       {% else %}
         {% comment %} As `page.comments` is empty, we must be on the index page. {% endcomment %}
