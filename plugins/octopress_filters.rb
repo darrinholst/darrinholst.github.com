@@ -115,7 +115,7 @@ module OctopressLiquidFilters
   end
 
   # Removes trailing .html
-  def strip_html(input)
+  def strip_html_extension(input)
     if input =~ /(.+)\.html$/
       input = $1
     end
