@@ -4,6 +4,7 @@ title: "git pull with uncommitted files"
 date: 2009-08-12
 comments: true
 permalink: "/post/161315325.html"
+categories: git
 ---
 
 Suppose for whatever reason you need to pull in changes from a remote repository and you have uncommitted files that you don’t want to commit. Git won’t let you do that if it needs to merge changes to one of your uncommitted files. Try this…

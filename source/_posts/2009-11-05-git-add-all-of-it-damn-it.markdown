@@ -4,6 +4,7 @@ title: "git add…all of it damn it"
 date: 2009-11-05
 comments: true
 permalink: "/post/234568461.html"
+categories: git
 ---
 
 As mentioned in the comments `git add -A` stages all modified, new, and deleted files. Just use that.

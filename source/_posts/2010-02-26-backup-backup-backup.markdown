@@ -4,6 +4,7 @@ title: "backup backup backup"
 date: 2010-02-26
 comments: true
 permalink: "/post/413204323.html"
+categories: backup
 ---
 
 I’ve gone through many variations of my backup strategy since I started storing things digitally. Here is my current setup…

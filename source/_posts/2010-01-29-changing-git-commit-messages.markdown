@@ -4,6 +4,7 @@ title: "changing git commit messages"
 date: 2010-01-29
 comments: true
 permalink: "/post/359817782.html"
+categories: git
 ---
 
 Changing your last commit message in a git repository is fairly trivial

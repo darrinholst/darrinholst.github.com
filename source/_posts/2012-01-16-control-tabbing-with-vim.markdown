@@ -4,6 +4,7 @@ title: "Control Tabbing with Vim"
 date: 2012-01-16
 comments: true
 permalink: "/post/15946656216.html"
+categories: vim
 ---
 
 Every once in a while I’ll go down the rabbit hole of trying to get proper control tabbing working in vim. If you’re not familiar with control tabbing through files in your editor think of it the same way as command tabbing through applications is osx or alt tabbing in windows. All the files that you’re working with are in a stack and the most recently used ones stay at the top. From the extensive research I’ve done not a lot of developers use this, but once you get used to it it’s hard to use something that doesn’t have it…like vim.

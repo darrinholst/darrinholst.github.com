@@ -4,6 +4,7 @@ title: "svn:externals in git?"
 date: 2009-08-13
 comments: true
 permalink: "/post/162307644.html"
+categories: git
 ---
 
 For all the benefits git has over svn, I found one thing that I was missing…svn:externals. There are a few suggesstions that you come across when searching around on this topic, one being git subprojects and another being git submodules.
