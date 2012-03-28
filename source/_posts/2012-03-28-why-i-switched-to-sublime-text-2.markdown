@@ -3,7 +3,7 @@ layout: post
 title: "Why I Switched to Sublime Text 2"
 date: 2012-03-28 00:07
 comments: true
-categories: 
+categories:
 ---
 
 * Download [Spacie](http://itunes.apple.com/us/app/spacie/id445413014?mt=12&ign-mpt=uo%3D4) from [$0.99 sale](http://zeroninetynine.com/)
@@ -16,4 +16,4 @@ categories:
 * See references to Sublime Text 2 in the comments
 * Download Sublime Text 2
 * Enable [vim mode](http://www.sublimetext.com/docs/2/vintage.html)
-* #done
+* go back to work
