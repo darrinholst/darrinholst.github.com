@@ -44,7 +44,7 @@ Fast forward to present day when [Les Hill](http://twitter.com/leshill) posted
 ![](https://dl.dropbox.com/u/2144189/blog/darrinholst/fatarrow/response.jpg)
 
 Intention revealing. So by *not* using ```=>``` everywhere means that I know
-what it does and when I should use it and that I really inteded to override the
+what it does and when I should use it and that I really intended to override the
 default behavior.
 
 Just because you have shorter syntax to do cumbersome things doesn't mean you
