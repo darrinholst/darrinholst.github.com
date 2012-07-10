@@ -8,7 +8,7 @@ categories:
 I was going to name this post Vim Golf, but it turned out to be more of a regex
 experiment than vim keystrokes.
 
-So I found this cool [iftt recipe](http://ifttt.com/recipes/37991) that logs all
+So I found this cool [ifttt recipe](http://ifttt.com/recipes/37991) that logs all
 of your tweets to a dropbox file. It puts them all in a single file with a
 format of:
 
