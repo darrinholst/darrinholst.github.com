@@ -136,6 +136,7 @@ body.sidebar-footer {
     margin: 0 auto;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    background-clip: padding-box;
   }
   #content {
     @extend .group;
