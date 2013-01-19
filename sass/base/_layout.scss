@@ -134,9 +134,13 @@ body.sidebar-footer {
     @extend .group;
     padding: 0;
     margin: 0 auto;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
   }
   #content {
     @extend .group;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     overflow: visible;
     margin-right: $sidebar-width-medium;
     position: relative;
