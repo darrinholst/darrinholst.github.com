@@ -140,8 +140,6 @@ body.sidebar-footer {
   }
   #content {
     @extend .group;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
     overflow: visible;
     margin-right: $sidebar-width-medium;
     position: relative;

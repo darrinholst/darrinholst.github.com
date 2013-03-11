@@ -1,7 +1,5 @@
 body > header {
   background: $header-bg;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
   background-clip: padding-box;
 
   h1 {
@@ -18,5 +16,30 @@ body > header {
     font-size: 1em;
     color: $subtitle-color;
     font-weight: normal;
+  }
+
+  hgroup {
+    float: left;
+  }
+
+  ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+
+    li {
+      float: right;
+      margin-left: 10px;
+
+      a {
+        color: #aaa !important;
+        text-decoration: none;
+        line-height: 2em !important;
+
+        &:hover {
+          color: #f2f2f2 !important;
+        }
+      }
+    }
   }
 }
