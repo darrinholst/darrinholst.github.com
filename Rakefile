@@ -3,7 +3,8 @@ require "bundler/setup"
 require "stringex"
 
 # This will be configured for you when you run config_deploy
-deploy_branch  = "master"
+deploy_branch   = "master"
+deploy_default  = "push"
 public_dir      = "public"    # compiled site directory
 source_dir      = "source"    # source file directory
 blog_index_dir  = 'source'    # directory for your blog's index page (if you put your index in source/blog/index.html, set this to 'source/blog')
@@ -98,7 +99,7 @@ task :deploy do
 end
 
 desc "Generate website and deploy"
-task :gen_deploy => [:integrate, :generate, :deploy] do
+task :gen_deploy => [:generate, :deploy] do
 end
 
 desc "copy dot files for deployment"
