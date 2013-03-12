@@ -32,12 +32,12 @@ body > header {
       margin-left: 10px;
 
       a {
-        color: #aaa !important;
+        color: $subtitle-color !important;
         text-decoration: none;
         line-height: 2em !important;
 
         &:hover {
-          color: #f2f2f2 !important;
+          color: $title-color !important;
         }
       }
     }

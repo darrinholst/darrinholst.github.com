@@ -19,7 +19,7 @@ permalink: "/rss"
   {% for post in site.posts limit: 20 %}
   <entry>
     {% if post.external-url %}
-      <title type="html"><![CDATA[{{ post.title | cdata_escape }} ↝]]></title><!-- add in a glyph or [link-post] here so people know where they're ending up -->
+      <title type="html"><![CDATA[{{ post.title | cdata_escape }} +]]></title><!-- add in a glyph or [link-post] here so people know where they're ending up -->
       <link href="{{ post.external-url }}"/>
     {% else %}
       <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
