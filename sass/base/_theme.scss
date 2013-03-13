@@ -1,66 +1,32 @@
 $img-border: inline-image('dotted-border.png');
 
-// Main Link Colors
 $link-color: #E0451B !default;
 $link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
 $link-color-visited: adjust-color($link-color, $lightness: -4) !default;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
-// Main Section Colors
 $main-bg: #f7f7f7 !default;
-$article-border: #eeeeee !default;
-
 $header-bg: $link-color !default;
-$header-border: lighten($header-bg, 15) !default;
 $title-color: white !default;
 $subtitle-color: #ccc !default;
-
-$text-color: #222 !default;
+$text-color: #333 !default;
 $text-color-light: #aaa !default;
 $type-border: #ddd !default;
-
-/* Sidebar colors */
-$sidebar-bg: #f2f2f2 !default;
-$sidebar-link-color: $link-color !default;
-$sidebar-link-color-hover: $link-color-hover !default;
-$sidebar-link-color-active: $link-color-active !default;
-$sidebar-color: change-color(mix($text-color, $sidebar-bg, 80), $hue: hue($sidebar-bg), $saturation: saturation($sidebar-bg)/2) !default;
-$sidebar-border: desaturate(darken($sidebar-bg, 7), 10) !default;
-$sidebar-border-hover: darken($sidebar-bg, 7) !default;
-$sidebar-link-color-subdued: lighten($sidebar-color, 20) !default;
-$sidebar-link-color-subdued-hover: $sidebar-link-color-hover !default;
-$twitter-status-link: lighten($sidebar-link-color-subdued, 15) !default;
-
 $footer-color: #888 !default;
 $footer-bg: #ccc !default;
-$footer-bg-front: image-url('noise.png') !default;
-$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11)) !default;
 $footer-color: darken($footer-bg, 38) !default;
-$footer-color-hover: darken($footer-color, 10) !default;
 $footer-border-top: lighten($footer-bg, 15) !default;
-$footer-border-bottom: darken($footer-bg, 15) !default;
-$footer-link-color: darken($footer-bg, 38) !default;
-$footer-link-color-hover: darken($footer-color, 25) !default;
-$page-border-bottom: darken($footer-bg, 5) !default;
-
-
-/* Core theme application */
 
 a {
   @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
-}
-aside.sidebar a {
-  @include link-colors($sidebar-link-color, $hover: $sidebar-link-color-hover, $focus: $sidebar-link-color-hover, $active: $sidebar-link-color-active);
-}
-a {
-  @include transition(color .3s);
+  @include transition(color .1s);
 }
 
 body {
   > div {
     > div {
-      border-left: 1px solid $sidebar-border;
-      border-right: 1px solid $sidebar-border;
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee;
     }
   }
 }

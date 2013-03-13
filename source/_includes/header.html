@@ -1,1 +1,15 @@
-{% include custom/header.html %}
+<div class="social">
+  <ul>
+    <li><a title="rss" href="http://feeds.feedburner.com/darrinholst" class="icon icon-rss icon-3x"></a></li>
+    <li><a title="twitter" href="https://twitter.com/darrinholst" class="icon icon-twitter icon-3x"></a></li>
+    <li><a title="github" href="https://github.com/darrinholst" class="icon icon-github icon-3x"></a></li>
+  </ul>
+</div>
+
+<header role="banner">
+  <hgroup>
+    <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+    {% if site.subtitle %}<h2>{{ site.subtitle }}</h2>{% endif %}
+  </hgroup>
+</header>
+

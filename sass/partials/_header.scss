@@ -1,15 +1,44 @@
+.social {
+  text-align: center;
+
+  ul {
+    @extend .cf;
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+
+    li {
+      margin-left: 10px;
+      display: inline-block;
+      float: right;
+
+
+      a {
+        color: $header-bg !important;
+        text-decoration: none;
+        line-height: 1.5em !important;
+
+        &:hover {
+          color: darken($header-bg, 10) !important;
+        }
+      }
+    }
+  }
+}
+
 body > header {
   background: $header-bg;
-  background-clip: padding-box;
 
   h1 {
     display: inline-block;
     margin: 0;
+
     a, a:visited, a:hover {
       color: $title_color;
       text-decoration: none;
     }
   }
+
   h2 {
     margin: .2em 0 0;
     @extend .sans;
@@ -17,29 +46,5 @@ body > header {
     color: $subtitle-color;
     font-weight: normal;
   }
-
-  hgroup {
-    float: left;
-  }
-
-  ul {
-    list-style: none;
-    float: right;
-    margin: 0;
-
-    li {
-      float: right;
-      margin-left: 10px;
-
-      a {
-        color: $subtitle-color !important;
-        text-decoration: none;
-        line-height: 2em !important;
-
-        &:hover {
-          color: $title-color !important;
-        }
-      }
-    }
-  }
 }
+
