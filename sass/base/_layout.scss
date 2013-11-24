@@ -82,7 +82,7 @@ body {
   body > header { font-size: $header-font-size * 1.2; }
 
   #main {
-    @extend .group;
+    @include pie-clearfix;
     padding: 0;
     margin: 0 auto;
     border-top-left-radius: 3px;
@@ -91,7 +91,7 @@ body {
   }
 
   #content {
-    @extend .group;
+    @include pie-clearfix;
     overflow: visible;
     position: relative;
     .no-sidebar & { margin-right: 0; border-right: 0; }
