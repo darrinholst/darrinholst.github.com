@@ -4,4 +4,20 @@
 
 @import "base";
 @import "partials";
-@import "font-awesome"
+@import "font-awesome";
+
+figure.full {
+  width: 100%;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 3px;
+  }
+
+  figcaption {
+    font-style: italic;
+    color: #999;
+    font-size: .9em;
+  }
+}
