@@ -6,6 +6,18 @@ comments: true
 categories: postgresql debian chef
 ---
 
+__11/8/2014 Update:__ Ignore all the babbling below and just install it from the [PGDG repo](http://www.postgresql.org/about/news/1432/).
+
+``` ruby
+node.set[:postgresql][:enable_pgdg_apt] = true
+node.set[:postgresql][:version] = '9.1'
+node.from_file(run_context.resolve_attribute('postgresql', 'default'))
+
+include_recipe 'postgresql::server'
+```
+
+Original content follows...
+
 On a project I've been working on I needed to get PostgreSQL
 updated from 8.4 to 9.anything on a Debian 6.0 system. 8.4 is the most
 up-to-date package on this particular system. Googling around didn't turn
