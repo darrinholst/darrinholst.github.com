@@ -2,6 +2,7 @@
 layout: post
 title: "Installing PostgreSQL 9.1 on Debian 6.0 with Chef"
 date: 2012-12-05 19:32
+updated: 2014-11-08 12:00
 comments: true
 categories: postgresql debian chef
 ---

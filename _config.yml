@@ -2,22 +2,20 @@ url                          : http://darrinholst.github.com
 title                        : "@darrinholst"
 subtitle                     : "#blog #ruby #javascript #paleo #lol"
 author                       : Darrin Holst
-simple_search                : http://google.com/search
 description                  :
 date_format                  : "ordinal"
 subscribe_rss                : http://feeds.feedburner.com/darrinholst
 root                         : /
-permalink                    : /blog/:year/:month/:day/:title.html
+permalink                    : /blog/:year/:month/:day/:title
 source                       : source
 destination                  : public
 plugins                      : plugins
-code_dir                     : downloads/code
 category_dir                 : blog/categories
 markdown                     : rdiscount
-pygments                     : false
+highligter                   : 'pygments'
 paginate                     : 5
-pagination_dir               : blogj
-excerpt_link                 : "Read on &rarr;"
+paginate_path                : "blog/page:num"
+excerpt_link                 : 'Read on &rarr;'
 titlecase                    : false
 disqus_short_name            : darrinholst
 disqus_show_comment_count    : true
