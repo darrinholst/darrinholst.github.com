@@ -7,9 +7,8 @@ date_format                  : "ordinal"
 subscribe_rss                : http://feeds.feedburner.com/darrinholst
 root                         : /
 permalink                    : /blog/:year/:month/:day/:title
-source                       : source
+source                       : .
 destination                  : public
-plugins                      : plugins
 category_dir                 : blog/categories
 markdown                     : rdiscount
 highligter                   : 'pygments'
