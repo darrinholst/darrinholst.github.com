@@ -11,7 +11,7 @@ Every once in a while I’ll go down the rabbit hole of trying to get proper con
 
 Up until now I’ve been using a combination of :bu # bound to Control-Tab and the [bufexplorer plugin](http://www.vim.org/scripts/script.php?script_id=42) bound to ,bb. If I want to quickly go back and forth between the top two buffers I’d use Control Tab, if I wanted to go back farther in history I’d use ,bb. Bufexplorer has a Most Recently Used option so the list shows up how I’d expect it to.
 
-![](http://dl.dropbox.com/u/2144189/blog/darrinholst/controltab/%5BBufExplorer%5D%20-%20%28~_Projects_chromepaper%29%20-%20VIM-3.jpg)
+![](/images/control_tab/1.jpg)
 
 There are two things I don’t like about this. First, I have separate commands to navigate buffers…Control-Tab and ,bb. The second thing I don’t like is bufexplorer loads in a new window which takes me out of my flow.
 
@@ -19,11 +19,11 @@ So after playing around with [Sublime Text 2](http://www.sublimetext.com/2) the 
 
 LustyJuggler will load all your buffers in a strip along the bottom and you can navigate with arrow keys, number keys, or home row keys. It also lists them in Most Recently Used order.
 
-![](http://dl.dropbox.com/u/2144189/blog/darrinholst/controltab/vimrc%20%28~%29%20-%20VIM.jpg)
+![](/images/control_tab/2.jpg)
 
 At first I wasn’t any happier with this solution than I was with bufexplorer…until I RTFM and found the LustyJugglerAltTabMode option. With this option set, activating LustyJuggler will automatically highlight the previous buffer.
 
-![](http://dl.dropbox.com/u/2144189/blog/darrinholst/controltab/vimrc%20%28~%29%20-%20VIM%202.jpg)
+![](/images/control_tab/3.jpg)
 
 Continuing to activate it will cycle through the list. So now with Control-Tab bound to this I can quickly Control-Tab and then Enter for the buffer I want.
 

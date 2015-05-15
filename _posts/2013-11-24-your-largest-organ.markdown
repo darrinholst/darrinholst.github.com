@@ -14,4 +14,4 @@ My fad is now nearly 5 months old and is entering the phase where it's just the 
 
 So I'll just end it with...
 
-![Works On My Machine](https://dl.dropboxusercontent.com/u/2144189/blog/womm.png)
+![Works On My Machine](/images/organ/womm.png)

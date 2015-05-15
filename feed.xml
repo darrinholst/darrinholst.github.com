@@ -1,0 +1,37 @@
+---
+layout: null
+permalink: "/rss"
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[{{ site.title }}]]></title>
+  <link href="{{ site.url }}/rss" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ site.url }}/</id>
+  <author>
+    <name><![CDATA[{{ site.author }}]]></name>
+    {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+  </author>
+
+  {% for post in site.posts limit: 20 %}
+  <entry>
+    {% if post.external-url %}
+      <title type="html"><![CDATA[{{ post.title | cdata_escape }} +]]></title>
+      <link href="{{ post.external-url }}"/>
+    {% else %}
+      <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
+      <link href="{{ site.url }}{{ post.url }}"/>
+    {% endif%}
+
+    {% if post.updated %}
+    <updated>{{ post.updated | date_to_xmlschema }}</updated>
+    {% else %}
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    {% endif %}
+    <id>{{ site.url }}{{ post.id }}</id>
+    <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></content>
+  </entry>
+  {% endfor %}
+</feed>

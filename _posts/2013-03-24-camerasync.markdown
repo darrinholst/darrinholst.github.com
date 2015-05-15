@@ -12,7 +12,7 @@ My phone was fine since I’d remember to plug it in every week or two and get t
 
 Then I found a small app called [CameraSync](http://homegrownsw.com/camerasync/).
 
-![CameraSync](https://dl.dropbox.com/u/2144189/blog/darrinholst/camerasync/icon.png)
+![CameraSync](/images/camera_sync/icon.png)
 
 CameraSync does what the title says, it syncs your photos to the cloud wirelessly. So I set it up on both phones to sync new photos to a Dropbox folder and now the photos just magically appear on my desktop. Small batches FTW.
 

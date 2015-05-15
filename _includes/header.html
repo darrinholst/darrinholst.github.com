@@ -1,15 +1,14 @@
-<div class="social">
-  <ul>
-    <li><a title="rss" href="http://feeds.feedburner.com/darrinholst" class="fa fa-rss fa-3x"></a></li>
-    <li><a title="twitter" href="https://twitter.com/darrinholst" class="fa fa-twitter fa-3x"></a></li>
-    <li><a title="github" href="https://github.com/darrinholst" class="fa fa-github fa-3x"></a></li>
-  </ul>
-</div>
-
-<header role="banner">
-  <hgroup>
-    <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
-    {% if site.subtitle %}<h2>{{ site.subtitle }}</h2>{% endif %}
-  </hgroup>
+<header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
+      <nav class="site-nav right">
+        {% include navigation.html %}
+      </nav>
+      <div class="clearfix"></div>
+      {% if site.show_social_icons %}
+        {% include social_links.html %}
+      {% endif %}
+    </div>
+  </div>
 </header>
-

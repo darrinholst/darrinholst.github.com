@@ -1,22 +1,29 @@
 ---
 layout: default
 ---
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-    <a class="prev" href="/blog/page{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="/blog/page{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
 
+<div class="home">
+
+  <div class="posts">
+    {% for post in paginator.posts %}
+      <div class="post">
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+        <p class="post-content">
+          {{ post.content }}
+        </p>
+        <!--
+        <p class="post-summary">
+          {% if post.summary %}
+            {{ post.summary }}
+          {% else %}
+            {{ post.content }}
+          {% endif %}
+        </p>
+        -->
+      </div>
+    {% endfor %}
+  </div>
+
+  {% include pagination.html %}
+</div>

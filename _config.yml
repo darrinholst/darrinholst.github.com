@@ -1,22 +1,62 @@
-url                          : http://darrinholst.github.com
-title                        : "@darrinholst"
-subtitle                     : "#blog #ruby #javascript #paleo #lol"
-author                       : Darrin Holst
-description                  :
-date_format                  : "ordinal"
-subscribe_rss                : http://feeds.feedburner.com/darrinholst
-root                         : /
-permalink                    : /blog/:year/:month/:day/:title
-source                       : .
-destination                  : public
-category_dir                 : blog/categories
-markdown                     : rdiscount
-highligter                   : 'pygments'
-paginate                     : 5
-paginate_path                : "blog/page:num"
-excerpt_link                 : 'Read on &rarr;'
-titlecase                    : false
-disqus_short_name            : darrinholst
-disqus_show_comment_count    : true
-google_analytics_tracking_id : UA-3052115-1
+#date_format                  : "ordinal"
+#subscribe_rss                : http://feeds.feedburner.com/darrinholst
+#category_dir                 : blog/categories
+#paginate_path                : "blog/page:num"
+#excerpt_link                 : 'Read on &rarr;'
+#titlecase                    : false
 
+url         : "http://darrinholst.github.com"
+title       : "@darrinholst"
+subtitle    : "#blog #ruby #javascript #paleo #lol"
+email       : "darrinholst@gmail.com"
+author      : "Darrin Holst"
+description :
+baseurl     :
+root        : /
+source      : .
+destination : public
+
+# Google analytics
+google_analytics: "UA-3052115-1"
+
+# Optional features
+animated:           false
+show_related_posts: false
+show_post_footers:  false
+
+# Disqus post comments
+disqus_shortname: "darrinholst"
+
+# Social icons
+show_social_icons: true
+github_username: darrinholst
+stackoverflow_id:
+twitter_username: darrinholst
+google_plus_id:
+linkedin_username:
+angellist_username:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Post sharing icons
+show_sharing_icons: false
+share_text: "Share this post!"
+share_facebook: false
+share_twitter: false
+share_googleplus: false
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: false
+share_stumbleupon: false
+share_hackernews: false
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["smart", "tables", "with_toc_data"]
+permalink: /blog/:year/:month/:day/:title
+paginate: 5
+sass:
+  compressed: true

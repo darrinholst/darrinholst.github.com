@@ -16,7 +16,7 @@ Remote work is not for every type of person or every type of business, but given
 Remote work means that an hour is not spent in my metal coffin (bonus points if you identify the movie reference Johnny) every day. My math shows 1 hour x 5 days x ~46 weeks x ~40 years = *over a calendar year in your car*. I would rather use that time getting my [10,000 steps](https://www.google.com/search?q=10000+steps) and saving the tremendous amount of money that is sunk into transportation costs. The reduced stress from the lack of a white knuckle drive in a typical Iowa winter is a bonus too. 90% of drivers believe that they are a better than average driver.
 
 <figure class="full">
-  <img src="https://dl.dropboxusercontent.com/u/2144189/blog/darrinholst/remote/commute.jpg">
+  <img src="/images/remote/commute.jpg">
   <figcaption>Hold my beer and watch this shit. WHEEEEEE!</figcaption>
 </figure>
 
@@ -24,7 +24,7 @@ Remote work means that an hour is not spent in my metal coffin (bonus points if 
 Working remotely means being able to help get my kids ready for school. It means being able to take them to school when my wife is sick. It means helping my 5 yr old with a puzzle for a few minutes at 10am. 
 
 <figure class="full">
-  <img src="https://dl.dropboxusercontent.com/u/2144189/blog/darrinholst/remote/smurfy.jpg">
+  <img src="/images/remote/smurfy.jpg">
   <figcaption>I don't condone the eating of smurfs. They are calorie dense and nutrient poor.</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ The time I actually do work stays the same, I just get to choose how to slice up
 Remote means giving a shit about what foods I put into my body and not settling for the usual lunchtime crap. Yes, I'm aware that I can pack a lunch, I've tried it...a lot. I'm also aware that it's a heck of a lot easier to just go upstairs and make something at lunchtime instead of guessing what I'll want 6 - 18 hours ahead of time. Save money, eat healthier, stay away from people making food for you for the vast majority of your meals.
 
 <figure class="full">
-  <img src="https://dl.dropboxusercontent.com/u/2144189/blog/darrinholst/remote/lunch.jpg">
+  <img src="/images/remote/lunch.jpg">
   <figcaption>Lunch is an event. Ask me about intermittent fasting sometime.</figcaption>
 </figure>
 
