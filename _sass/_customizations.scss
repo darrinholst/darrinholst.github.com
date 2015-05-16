@@ -1,0 +1,24 @@
+.fa-rss-fu-adblock:before {
+  content: "\f09e";
+}
+
+.fa-twitter-fu-adblock:before {
+  content: "\f099";
+}
+
+figure.full {
+  margin: 0;
+  width: 100%;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 3px;
+  }
+
+  figcaption {
+    font-style: italic;
+    color: #999;
+    font-size: .9em;
+  }
+}
