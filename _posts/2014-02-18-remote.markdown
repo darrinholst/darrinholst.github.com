@@ -42,7 +42,7 @@ Remote means giving a shit about what foods I put into my body and not settling 
 For all the things that remote work means to me, it does not mean [working in my jammies](https://twitter.com/Rass30/status/435585349318742016) while watching The Price is Right. I do actually get up at the same time every morning, shower and put on big boy clothes usually beginning around 5:30am. That said, all bets are off at 4pm when Dr. Oz comes on.
 
 <figure class="full">
-  <img src="http://dl.dropboxusercontent.com/u/2144189/blog/darrinholst/remote/pajamas.jpg">
+  <img src="/images/remote/pajamas.jpg">
   <figcaption>Dr. Oz is going to look sweet on this baby!</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ There is a stigma that is attached to remote workers that we work less. The thin
 It also does not mean lounging on the couch with my laptop. I have a dedicated space where I stand roughly 90% of my working day. 
 
 <figure class="full">
-  <img src="http://dl.dropboxusercontent.com/u/2144189/blog/darrinholst/remote/space.jpg">
+  <img src="/images/remote/space.jpg">
   <figcaption>Rustic theme with custom hardwood floors...er desk</figcaption>
 </figure>
 
