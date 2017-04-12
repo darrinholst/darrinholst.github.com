@@ -159,6 +159,10 @@ table {
   margin-top: 0;
   font-weight: 600;
   color: #333;
+
+  .post-header & {
+    text-decoration: underline;
+  }
 }
 
 .post-footer {

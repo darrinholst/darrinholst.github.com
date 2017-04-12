@@ -22,3 +22,13 @@ figure.full {
     font-size: .9em;
   }
 }
+
+.home {
+  td {
+    border: none;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
