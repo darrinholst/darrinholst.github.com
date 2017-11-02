@@ -21,6 +21,10 @@ figure.full {
     color: #999;
     font-size: .9em;
   }
+
+  & + p {
+    margin-top: 32px;
+  }
 }
 
 .home {
