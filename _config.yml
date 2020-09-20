@@ -1,13 +1,5 @@
-#date_format                  : "ordinal"
-#subscribe_rss                : http://feeds.feedburner.com/darrinholst
-#category_dir                 : blog/categories
-#paginate_path                : "blog/page:num"
-#excerpt_link                 : 'Read on &rarr;'
-#titlecase                    : false
-
 url         : "http://darrinholst.github.com"
-title       : "@darrinholst"
-subtitle    : "#blog #ruby #javascript #paleo #lol"
+title       : "darrinholst.com"
 email       : "darrinholst@gmail.com"
 author      : "Darrin Holst"
 description :
@@ -16,46 +8,12 @@ root        : /
 source      : .
 destination : public
 
-# Google analytics
-google_analytics: "UA-3052115-1"
-
-# Optional features
-animated:           false
-show_related_posts: false
-show_post_footers:  false
-
-# Disqus post comments
-disqus_shortname: "darrinholst"
-
 # Social icons
 show_social_icons: true
 github_username: darrinholst
-stackoverflow_id: 844833
-twitter_username: darrinholst
-google_plus_id:
-linkedin_username:
-angellist_username:
-bitcoin_url:
-paypal_url:
-flattr_button:
-
-# Post sharing icons
-show_sharing_icons: false
-share_text: "Share this post!"
-share_facebook: false
-share_twitter: false
-share_googleplus: false
-share_linkedin: false
-share_digg: false
-share_tumblr: false
-share_reddit: false
-share_stumbleupon: false
-share_hackernews: false
 
 # Build settings
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
-gems: ['jekyll-paginate']
-paginate: 5
 sass:
   compressed: true

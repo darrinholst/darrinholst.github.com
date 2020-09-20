@@ -35,6 +35,10 @@ figure.full {
     &:first-child {
       padding-left: 0;
     }
+
+    &:last-child {
+      white-space: nowrap;
+    }
   }
 }
 
