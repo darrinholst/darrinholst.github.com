@@ -10,7 +10,7 @@
     "start": "nf start jekyll=1,browsersync=1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "foreman": "^3.0.1"
   }
 }
