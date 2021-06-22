@@ -16,10 +16,25 @@
       <!-- Fonts -->
       <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic&display=swap' rel='stylesheet' type='text/css'>
       <link href='//fonts.googleapis.com/css?family=Lato:900,300&display=swap' rel='stylesheet' type='text/css'>
+
+      {% if site.show_social_icons or site.show_sharing_icons %}
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      {% endif %}
   </head>
   <body>
     <div class="site-wrap">
-      <div class="post p2 p-responsive wrap" role="main">
+      <header class="site-header px2 px-responsive">
+        <div class="mt2 wrap">
+          <div class="measure">
+            <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
+            <div class="clearfix"></div>
+            {% if site.show_social_icons %}
+              {% include social_links.html %}
+            {% endif %}
+          </div>
+        </div>
+      </header>
+      <div class="post p1 px-responsive wrap" role="main">
         <div class="measure">
           {{ content }}
         </div>

@@ -11,6 +11,7 @@ destination : public
 # Social icons
 show_social_icons: true
 github_username: darrinholst
+stackoverflow_id: 844833
 
 # Build settings
 markdown: kramdown
