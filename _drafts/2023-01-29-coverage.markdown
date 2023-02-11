@@ -1,0 +1,197 @@
+---
+layout: post
+title: "Code coverage"
+date: 2023-01-29 07:00
+---
+
+``` javascript
+import React from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { setSelectedTenant } from '../store/actions/tenants';
+import { setSelectedTenantThings } from '../store/actions/things';
+import { onRowSelection, scrollToThing } from '../lib/stuff';
+import { useOtherThings } from './use-other-things';
+import { useIsMounted } from './use-is-mounted';
+
+const THING_KEY = ':thing';
+const TENANT_KEY = ':tenant';
+const OPTION_KEY = ':option';
+
+const useUrlSync = (format, things, isLoading = false, option = null) => {
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const history = useHistory();
+  const otherThings = useOtherThings();
+  const isMounted = useIsMounted();
+  const { tenants, selectedThings, selectedTenant } = useSelector(doesntMatter);
+  const [scrolled, setScrolled] = React.useState(false);
+  const [tenantFromUrl, setTenantFromUrl] = React.useState(false);
+  const [thingFromUrl, setFieldFromUrl] = React.useState(false);
+
+  /* complexity: 4 */
+  React.useEffect(() => {
+    if (!isLoading && selectedThings.length === 1 && !scrolled) {
+      setTimeout(
+        () => isMounted() && setScrolled(scrollToThing(selectedThings)),
+        500
+      );
+    }
+  }, [selectedThings, scrolled, isLoading]);
+
+  /* complexity: 14 */
+  React.useEffect(() => {
+    const path = location.pathname.split('/');
+    const pathParts = format.split('/');
+    const tenantIndex = pathParts.findIndex((f) => f === TENANT_KEY);
+    const thingIndex = pathParts.findIndex((f) => f === THING_KEY);
+    const tenantIdFromPath = path[tenantIndex]?.toUpperCase();
+
+    if (tenants.length > 0 && !tenantFromUrl) {
+      if (
+        tenantIndex !== -1 &&
+        ((!selectedTenant && tenantIdFromPath) ||
+          (selectedTenant && tenantIdFromPath !== selectedTenant.guid))
+      ) {
+        const selTenant = tenants.find(
+          (grower) => grower.guid === tenantIdFromPath
+        );
+        if (selTenant) {
+          dispatch(setSelectedTenant(selTenant));
+          setTenantFromUrl(true);
+        }
+      }
+    }
+
+    if (thingIndex !== -1 && path[thingIndex] > '' && !thingFromUrl) {
+      const selThing = things.find(
+        (thing) => thing.id === path[thingIndex]
+      );
+      if (selThing && otherThings.length > 0) {
+        onRowSelection(
+          selThing,
+          selectedThings,
+          (sel) => dispatch(setSelectedTenantThings(sel)),
+          otherThings
+        );
+        setFieldFromUrl(true);
+      }
+    }
+  }, [tenants, things, location.pathname, otherThings.length, isLoading]);
+
+  /* complexity: 13 */
+  React.useEffect(() => {
+    let url = '';
+    if (selectedTenant) {
+      url = format.replace(TENANT_KEY, selectedTenant.id);
+      const fieldIndex = format.split('/').findIndex((f) => f === THING_KEY);
+      if (option) {
+        const optionIndex = format
+          .split('/')
+          .findIndex((f) => f === OPTION_KEY);
+        const currentOption = location.pathname.split('/')[optionIndex];
+        const optVal = currentOption || option.default;
+        url = url.replace(OPTION_KEY, optVal);
+      }
+
+      if (fieldIndex !== -1) {
+        if (otherThings.length > 0) {
+          if (selectedThings && selectedThings.length === 1) {
+            url = url.replace(THING_KEY, selectedThings[0].id);
+          } else if (selectedThings.length > 0) {
+            url = url.replace(THING_KEY, '');
+          } else {
+            let thingId = location.pathname.split('/')[fieldIndex];
+            thingId =
+              selectedThings.length === 1 &&
+              thingId === selectedThings[0].thingId
+                ? thingId
+                : '';
+            url = url.replace(THING_KEY, thingId);
+          }
+        } else
+          url = url.replace(
+            THING_KEY,
+            location.pathname.split('/')[fieldIndex] || ''
+          );
+        url = url.replace(THING_KEY, location.pathname.split('/')[fieldIndex]);
+        url += location.search;
+      }
+      url !== location.pathname && history.push(url);
+    }
+  }, [otherThings.length, selectedTenant, selectedThings]);
+};
+
+export { THING_KEY, TENANT_KEY, OPTION_KEY, useUrlSyncer };
+```
+
+``` javascript
+describe('useUrlSyncer', () => {
+  let things;
+  let testKey;
+  let tenants;
+  let isLoading;
+  let optDefault;
+  let option;
+  let tenant;
+  let thing;
+  let path;
+  let otherThings;
+  let state;
+  let spyScroll;
+
+  //+--- 31 lines: beforeEach(() => {
+
+  describe('When setting state from url', () => {
+    describe('When option, tenant and thing are present', () => {
+      //+----- 17 lines: it('should set state from the url', () => {
+    });
+
+    describe('When option and tenant are present', () => {
+      //+----- 15 lines: it('should set state from the url', () => {
+    });
+
+    describe('When tenant is not present', () => {
+      //+----- 15 lines: it('should set state from the url', () => {
+    });
+  });
+
+  describe('When setting url from state', () => {
+      //+----  3 lines: beforeEach(() => {
+
+    describe('When tenant and thing present', () => {
+      //+----- 20 lines: it('should push the stateful url to history', () => {
+    });
+
+    describe('When tenant', () => {
+      //+----- 15 lines: it('should push the stateful url to history', () => {
+    });
+
+    describe('When tenant in state and option in url', () => {
+      //+----- 16 lines: it('should push the stateful url to history', () => {
+    });
+
+    describe('When no tenant and has thing', () => {
+      //+----- 17 lines: it('should not push to history', () => {
+    });
+
+    describe('When tenant and multiple things present', () => {
+      //+----- 16 lines: it('should push the stateful url to history', () => {
+    });
+
+    describe('When tenant and no thing in state but is in url', () => {
+      //+----- 20 lines: it('should push the stateful url to history, and set the thing in state', () => {
+    });
+  });
+
+  describe('When auto-scrolling', () => {
+    //+---- 32 lines: it('Should scroll to selection only once even if rendered multiple times.', async () => {
+  });
+});
+```
+
+<figure>
+  <img src="/images/coverage/coverage.png">
+  <figcaption>&nbsp;</figcaption>
+</figure>

@@ -1,0 +1,78 @@
+---
+layout: post
+title: "git upall"
+date: 2023-02-12
+---
+
+I've had this git alias called `upall` for a while now. It finds all git
+repositories and runs a `git up` on them. `up` is another alias which is
+a git pull with rebase, pruning, and merged branch cleanup.
+
+```
+cleanup = !git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D
+up = !git pull --rebase --prune && git cleanup
+upall = !"find . -type d -name .git -exec echo \\; -execdir pwd \\; -execdir git co -q main \\; -execdir bash -c \"git up | awk '/Already up/{next} {print}'\" \\;"
+```
+
+It worked fine and did what it was supposed to, but you may be able to guess the
+issue that bugged me from the beginning. It was fine at first, but we must 
+be getting our repositories wet because they multiply like crazy.
+
+```
+➜ /usr/bin/time git upall
+      150.53 real         9.55 user         9.31 sys
+```
+
+So my goal this weekend was to wave whatever rubber chicken I needed to in
+order to add some parallelism to that alias. I've tried and failed a couple of times 
+to do this. With that in the back of my mind, I stalled and went to stack overflow to 
+see what they had to say about it.
+
+I found [Managing many git
+repositories](https://stackoverflow.com/questions/816619/managing-many-git-repositories).
+Asked nearly _14 years ago_. Oh boy, what kind of ancient tooling do we have in
+here? There were a lot of different suggestions, but I found one comment
+that was only a couple of years old promoting [gita](https://github.com/nosarthur/gita).
+Off to github fully expecting the last commit to be a couple of years ago, but
+much to my surprise it was 2 weeks ago. Bingo.
+
+I blindly went back to the terminal...
+
+```
+➜ brew install gita
+Warning: No available formula with the name "gita". Did you mean git, gitg or giza?
+```
+
+A few seconds of blank stares making sure I didn't misspell it. It is only 4
+letters, but ya never know. Back to the readme and a search for 'installation'
+
+```
+pip3 install -U gita
+```
+
+_Very audible sigh_
+
+I closed my eyes and followed along and was glad I did because it did exactly
+what I was needing.
+
+It does require you to add a repository to its known list of repositories, but it has
+a `gita add -a` which will add all the repositories it finds under the current
+directory.
+
+The `super` command was what I was looking for which will run a git command or
+alias against all of it's managed repositories.
+
+So I changed my alias to
+
+```
+upall = !"gita add -a . && gita super up"
+```
+
+```
+➜ /usr/bin/time git upall
+        3.65 real         4.70 user         5.19 sys
+```
+
+Give it a try if you have a bunch of repositories that you manage and want to
+supercharge your workflow.
+
